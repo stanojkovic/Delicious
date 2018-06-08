@@ -21,12 +21,18 @@ namespace Delicious
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
+                      "~/Content/mdb/js/compiled.min.js",
+                      "~/Content/mdb/js/wow.min.js",
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       //"~/Content/bootstrap.css",
                       "~/Content/bootstrap-solar.css",
+                      "~/Content/mdb/css/compiled.min.css",
                       "~/Content/site.css"));
         }
     }
 }
+
+
+ 
