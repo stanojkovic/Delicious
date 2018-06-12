@@ -15,8 +15,8 @@
     <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>
-
-            @Html.ActionLink("DELICIOUS", "Index", "Home", new { area = "" }, new { @class = "navbar-brand text-danger text-strong" })
+            <span class="text-danger"><i class="fa fa-birthday-cake" aria-hidden="true">&nbsp;&nbsp;&nbsp;</i></span>
+            @Html.ActionLink("DELICIOUS", "Index", "Home", new { area = "" }, new { @class = "navbar-brand text-danger" })
             <div class="navbar-collapse collapse" id="navbarSupportedContent">
                 <ul class="nav navbar-nav mr-auto">
                     <li class="nav-item">@Html.ActionLink("Početna", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
