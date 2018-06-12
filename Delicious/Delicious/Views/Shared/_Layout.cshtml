@@ -15,7 +15,7 @@
     <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>
-           
+
             @Html.ActionLink("DELICIOUS", "Index", "Home", new { area = "" }, new { @class = "navbar-brand text-danger text-strong" })
             <div class="navbar-collapse collapse" id="navbarSupportedContent">
                 <ul class="nav navbar-nav mr-auto">
@@ -40,9 +40,10 @@
         </footer>
     </div>
 
-   
+
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/mdb")
     @RenderSection("scripts", required: false)
 </body>
 </html>
