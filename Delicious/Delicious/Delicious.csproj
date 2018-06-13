@@ -241,6 +241,17 @@
     <Content Include="Content\font-awesome\css\font-awesome.min.css" />
     <Content Include="Content\font-awesome\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\font-awesome\HELP-US-OUT.txt" />
+    <Content Include="Content\img\bakery01.jpg" />
+    <Content Include="Content\img\bakery02.jpg" />
+    <Content Include="Content\img\bakery03.jpg" />
+    <Content Include="Content\img\bakery04.jpg" />
+    <Content Include="Content\img\Cake01.jpg" />
+    <Content Include="Content\img\Cake02.jpg" />
+    <Content Include="Content\img\Cake03.jpg" />
+    <Content Include="Content\img\Cake04.jpg" />
+    <Content Include="Content\img\Cake05.jpg" />
+    <Content Include="Content\img\Cake06.jpg" />
+    <Content Include="Content\img\Cake07.jpg" />
     <Content Include="Content\mdb\css\bootstrap.css" />
     <Content Include="Content\mdb\css\bootstrap.min.css" />
     <Content Include="Content\mdb\css\compiled.min.css" />

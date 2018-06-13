@@ -15,15 +15,19 @@
     <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>
-            <span class="text-danger"><i class="fa fa-birthday-cake" aria-hidden="true">&nbsp;&nbsp;&nbsp;</i></span>
-            @Html.ActionLink("DELICIOUS", "Index", "Home", new { area = "" }, new { @class = "navbar-brand text-danger" })
+            <span class="text-danger"><i class="fa fa-birthday-cake wow animated bounce infinite" aria-hidden="true">&nbsp;&nbsp;&nbsp;</i></span>
+            @Html.ActionLink("DELICIOUS", "Index", "Home", new { area = "" }, new { @class = "navbar-brand text-muted wow animated bounce infinite" })
             <div class="navbar-collapse collapse" id="navbarSupportedContent">
                 <ul class="nav navbar-nav mr-auto">
-                    <li class="nav-item">@Html.ActionLink("Početna", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li class="nav-item">@Html.ActionLink("Kolači", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li class="nav-item">@Html.ActionLink("Peciva", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li class="nav-item">@Html.ActionLink("O nama", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li class="nav-item">@Html.ActionLink("Kontakt", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li class="nav-item border border-light">@Html.ActionLink("Početna", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    @Html.Raw("&nbsp;&nbsp;&nbsp;&nbsp;")
+                    <li class="nav-item border border-light">@Html.ActionLink("Kolači", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    @Html.Raw("&nbsp;&nbsp;&nbsp;&nbsp;")
+                    <li class="nav-item border border-light">@Html.ActionLink("Peciva", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    @Html.Raw("&nbsp;&nbsp;&nbsp;&nbsp;")
+                    <li class="nav-item border border-light">@Html.ActionLink("O nama", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    @Html.Raw("&nbsp;&nbsp;&nbsp;&nbsp;")
+                    <li class="nav-item border border-light">@Html.ActionLink("Kontakt", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
 
                 </ul>
                 @Html.Partial("_LoginPartial")
