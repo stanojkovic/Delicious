@@ -11,7 +11,10 @@ namespace Delicious.Models
         public string RecipeName { get; set; }
         public string Description { get; set; }
         public string ImageName { get; set; }
-        public DateTime InputDate { get; set; }
+        public DateTime InputDate
+        {
+            get { return DateTime.Now; }
+        }
         public Category Category { get; set; }
         public virtual ICollection<Ingredient> Ingredients { get; set; }
     }
