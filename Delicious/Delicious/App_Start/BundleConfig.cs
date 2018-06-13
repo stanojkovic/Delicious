@@ -34,7 +34,7 @@ namespace Delicious
                       "~/Content/bootstrap-solar.css",
                       "~/Content/mdb/css/compiled.min.css",
                       "~/Content/font-awesome/css/font-awesome.min.css",
-                      "~/Content/site.css"));
+                      "~/Content/Site.css"));
         }
     }
 }

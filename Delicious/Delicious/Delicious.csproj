@@ -217,6 +217,10 @@
     <Compile Include="Migrations\201806121248221_Initial.Designer.cs">
       <DependentUpon>201806121248221_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806131703535_ChangeDateTime.cs" />
+    <Compile Include="Migrations\201806131703535_ChangeDateTime.Designer.cs">
+      <DependentUpon>201806131703535_ChangeDateTime.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Category.cs" />
@@ -493,6 +497,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201806121248221_Initial.resx">
       <DependentUpon>201806121248221_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806131703535_ChangeDateTime.resx">
+      <DependentUpon>201806131703535_ChangeDateTime.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
