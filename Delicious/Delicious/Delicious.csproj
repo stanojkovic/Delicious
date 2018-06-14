@@ -221,6 +221,10 @@
     <Compile Include="Migrations\201806131703535_ChangeDateTime.Designer.cs">
       <DependentUpon>201806131703535_ChangeDateTime.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806141115404_ChangeIdtoINT.cs" />
+    <Compile Include="Migrations\201806141115404_ChangeIdtoINT.Designer.cs">
+      <DependentUpon>201806141115404_ChangeIdtoINT.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Category.cs" />
@@ -258,6 +262,7 @@
     <Content Include="Content\img\Cake05.jpg" />
     <Content Include="Content\img\Cake06.jpg" />
     <Content Include="Content\img\Cake07.jpg" />
+    <Content Include="Content\img\no_image.png" />
     <Content Include="Content\mdb\css\bootstrap.css" />
     <Content Include="Content\mdb\css\bootstrap.min.css" />
     <Content Include="Content\mdb\css\compiled.min.css" />
@@ -500,6 +505,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201806131703535_ChangeDateTime.resx">
       <DependentUpon>201806131703535_ChangeDateTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806141115404_ChangeIdtoINT.resx">
+      <DependentUpon>201806141115404_ChangeIdtoINT.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

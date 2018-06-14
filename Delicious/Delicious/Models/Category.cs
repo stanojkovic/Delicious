@@ -7,7 +7,7 @@ namespace Delicious.Models
 {
     public class Category
     {
-        public Guid Id { get; set; }
+        public int Id { get; set; }
         public string CategoriesName { get; set; }
 
         public virtual ICollection<Recipe> Recipes { get; set; }

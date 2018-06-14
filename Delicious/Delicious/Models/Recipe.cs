@@ -11,6 +11,15 @@ namespace Delicious.Models
         public string RecipeName { get; set; }
         public string Description { get; set; }
         public string ImageName { get; set; }
+
+        public string ImageNameToShow
+        {
+            get
+            {
+                return string.IsNullOrWhiteSpace(ImageName) ? "no_image.png" : string.Format("{0}", ImageName);
+            }
+        }
+
         public DateTime InputDate
         {
             get { return DateTime.Now; }
