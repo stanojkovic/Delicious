@@ -7,9 +7,9 @@ namespace Delicious.Models
 {
     public class Ingredient
     {
-        public Guid Id { get; set; }
+        public int Id { get; set; }
         public string IngredientName { get; set; }
-        public double Quantity { get; set; }    
+      
         public virtual ICollection<Recipe> Recipes { get; set; }
     }
 }

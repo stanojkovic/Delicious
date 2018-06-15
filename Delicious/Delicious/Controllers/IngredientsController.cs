@@ -21,7 +21,7 @@ namespace Delicious.Controllers
         }
 
         // GET: Ingredients/Details/5
-        public ActionResult Details(Guid? id)
+        public ActionResult Details(int? id)
         {
             if (id == null)
             {
@@ -50,7 +50,6 @@ namespace Delicious.Controllers
         {
             if (ModelState.IsValid)
             {
-                ingredient.Id = Guid.NewGuid();
                 db.Ingredients.Add(ingredient);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -60,7 +59,7 @@ namespace Delicious.Controllers
         }
 
         // GET: Ingredients/Edit/5
-        public ActionResult Edit(Guid? id)
+        public ActionResult Edit(int? id)
         {
             if (id == null)
             {
@@ -91,7 +90,7 @@ namespace Delicious.Controllers
         }
 
         // GET: Ingredients/Delete/5
-        public ActionResult Delete(Guid? id)
+        public ActionResult Delete(int? id)
         {
             if (id == null)
             {
@@ -108,7 +107,7 @@ namespace Delicious.Controllers
         // POST: Ingredients/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(Guid id)
+        public ActionResult DeleteConfirmed(int id)
         {
             Ingredient ingredient = db.Ingredients.Find(id);
             db.Ingredients.Remove(ingredient);

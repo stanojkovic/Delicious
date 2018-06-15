@@ -39,6 +39,7 @@ namespace Delicious.Controllers
         public ActionResult Create()
         {
             SetCategory();
+            //SetIngredients();
             return View();
         }
 
@@ -67,13 +68,14 @@ namespace Delicious.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(Recipe recipe, int categoryId, HttpPostedFileBase img)
+        public ActionResult Create(Recipe recipe, int categoryId, int ingredientId, HttpPostedFileBase img)
         {
             if (ModelState.IsValid)
             {
                 //snimanje u bazu
                 //recipe.Category = db.Categories.Find(recipe.Category.Id);
                 recipe.Category = db.Categories.Find(categoryId);
+                recipe.Category = db.Categories.Find(ingredientId);
                 recipe.Id = Guid.NewGuid();
                 db.Recipes.Add(recipe);
                 db.SaveChanges();
@@ -85,6 +87,7 @@ namespace Delicious.Controllers
 
                   
             SetCategory();
+            //SetIngredients();
             return View(recipe);
         }
 
@@ -101,6 +104,7 @@ namespace Delicious.Controllers
                 return HttpNotFound();
             }
             SetCategory();
+            //SetIngredients();
             return View(recipe);
         }
 
@@ -147,6 +151,7 @@ namespace Delicious.Controllers
             }
            
             SetCategory();
+            //SetIngredients();
             return View(recipeForm); 
         }
 
@@ -192,6 +197,12 @@ namespace Delicious.Controllers
         {
             ViewBag.Categories = db.Categories.ToList();
         }
+
+        //public void SetIngredients()
+        //{
+        //    ViewBag.Ingredients = db.Ingredients.ToList();
+        //}
+
 
         protected override void Dispose(bool disposing)
         {

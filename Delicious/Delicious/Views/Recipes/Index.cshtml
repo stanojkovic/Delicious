@@ -7,10 +7,10 @@
 
 <div class="container">
     <div class="row mt-4">
-        <div class="col-lg-8">
+        <div class="col-lg-4">
             <h2>Kolaci</h2>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-8 ">
             <p>
                 @Html.ActionLink("Create New", "Create")
             </p>
@@ -70,17 +70,27 @@
     <div class="row">
         @foreach (var item in Model)
         {
-        <div class="col-sm-4 mt-4">
-
+        <div class="col-sm-4 mt-4 text-center">
+             
             <img src="@string.Format("/Content/img/{0}", item.ImageNameToShow)" style="width:250px;">
             <br>
             @Html.DisplayNameFor(model => model.RecipeName)
             @Html.Raw(":&nbsp;")
             @Html.DisplayFor(modelItem => item.RecipeName)
             @Html.Raw("</br>")
+
+
             @Html.DisplayNameFor(model => model.Description)
             @Html.Raw(":&nbsp;")
-            @Html.TextAreaFor(modelItem => item.Description)
+
+            <div class="row border border-primary m-1">
+                <div class="col-12  p-3">
+
+                    @Html.DisplayFor(modelItem => item.Description)
+                </div>
+            </div>
+
+
             @Html.Raw("</br>")
             @Html.DisplayNameFor(model => model.InputDate)
             @Html.Raw(":&nbsp;")

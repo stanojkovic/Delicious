@@ -225,6 +225,14 @@
     <Compile Include="Migrations\201806141115404_ChangeIdtoINT.Designer.cs">
       <DependentUpon>201806141115404_ChangeIdtoINT.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806141600219_ChangeIDIngredientsToINT.cs" />
+    <Compile Include="Migrations\201806141600219_ChangeIDIngredientsToINT.Designer.cs">
+      <DependentUpon>201806141600219_ChangeIDIngredientsToINT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806141608066_ChangePlaceQuantity.cs" />
+    <Compile Include="Migrations\201806141608066_ChangePlaceQuantity.Designer.cs">
+      <DependentUpon>201806141608066_ChangePlaceQuantity.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Category.cs" />
@@ -255,6 +263,7 @@
     <Content Include="Content\img\bakery02.jpg" />
     <Content Include="Content\img\bakery03.jpg" />
     <Content Include="Content\img\bakery04.jpg" />
+    <Content Include="Content\img\cake.png" />
     <Content Include="Content\img\Cake01.jpg" />
     <Content Include="Content\img\Cake02.jpg" />
     <Content Include="Content\img\Cake03.jpg" />
@@ -508,6 +517,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201806141115404_ChangeIdtoINT.resx">
       <DependentUpon>201806141115404_ChangeIdtoINT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806141600219_ChangeIDIngredientsToINT.resx">
+      <DependentUpon>201806141600219_ChangeIDIngredientsToINT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806141608066_ChangePlaceQuantity.resx">
+      <DependentUpon>201806141608066_ChangePlaceQuantity.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

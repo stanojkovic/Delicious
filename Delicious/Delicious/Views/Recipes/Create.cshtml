@@ -33,22 +33,30 @@
     </div>
 
     @*<div class="form-group">
-        @Html.LabelFor(m => m.Category, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            @Html.DropDownListFor(m => m.Category.Id, new SelectList(ViewBag.Categories, "Id", "CategoriesName"), new { @class = "form-control text-success" }
-                                                                    )
-            @Html.ValidationMessageFor(m => m.Category)
-        </div>
-    </div>*@
+            @Html.LabelFor(m => m.Category, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(m => m.Category.Id, new SelectList(ViewBag.Categories, "Id", "CategoriesName"), new { @class = "form-control text-success" }
+                                                                        )
+                @Html.ValidationMessageFor(m => m.Category)
+            </div>
+        </div>*@
 
     <div class="form-group">
         @Html.LabelFor(m => m.Category, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
-            @Html.DropDownList("categoryId", new SelectList(ViewBag.Categories, "Id", "CategoriesName"), new { @class = "form-control text-success" }
-                                                                    )
+            @Html.DropDownList("categoryId", new SelectList(ViewBag.Categories, "Id", "CategoriesName"),)
             @Html.ValidationMessageFor(m => m.Category)
         </div>
     </div>
+
+    @*<div class="form-group">
+        @Html.LabelFor(m => m.Ingredients, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.CheckBoxFor("ingredientId", new SelectList(ViewBag.Ingredients, "Id", "IngredientName"), new { @class = "form-control text-success" }
+                                                                         )
+            @Html.ValidationMessageFor(m => m.Ingredients)
+        </div>
+    </div>*@
 
     @*<div class="form-group">
             @Html.LabelFor(model => model.ImageName, htmlAttributes: new { @class = "control-label col-md-2" })
